@@ -1,4 +1,4 @@
-namespace GaiaInfraUtils.Extensions;
+namespace GaiaInfraUtils.Time;
 
 public class Date
 {
@@ -6,9 +6,9 @@ public class Date
 
     private const int MillisRate = 10000;
 
-    private long TimeMillis { get; }
+    public long TimeMillis { get; }
 
-    private TimeZoneInfo TimeZone { get; }
+    public TimeZoneInfo TimeZone { get; }
 
     public Date()
     {

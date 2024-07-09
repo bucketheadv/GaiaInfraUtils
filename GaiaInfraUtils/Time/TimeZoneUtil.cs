@@ -1,12 +1,12 @@
-namespace GaiaInfraUtils.Extensions;
+namespace GaiaInfraUtils.Time;
 
-public class TimeZoneUtil
+public abstract class TimeZoneUtil
 {
     public class TimeZone(string id, TimeSpan timeSpan)
     {
-        public string Id { get; set; } = id;
+        public string Id { get; } = id;
 
-        public TimeSpan TimeSpan { get; set; } = timeSpan;
+        public TimeSpan TimeSpan { get; } = timeSpan;
     }
     
     public static readonly TimeZone GMT_0 = new("GMT+00:00", TimeSpan.Zero);
